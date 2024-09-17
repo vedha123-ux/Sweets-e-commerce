@@ -1,0 +1,30 @@
+/* src/components/Bestsellers.css */
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .product-item {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 16px; /* Space between items */
+    vertical-align: top;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
